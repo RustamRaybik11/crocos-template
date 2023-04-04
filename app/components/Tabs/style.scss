@@ -1,0 +1,92 @@
+.tabs_content {
+  margin-top: 30px;
+}
+.tabs_links {
+  position: relative;
+
+  max-width: 100%;
+  padding-bottom: 50px;
+}
+.tabs-component {
+  &_list {
+    position: absolute;
+
+    @include horizontalScroll;
+    width: -webkit-fill-available;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    display: flex;
+    padding-bottom: 3px;
+    gap: 1px;
+    &_item {
+      display: inline-block;
+      list-style: none;
+      cursor: pointer;
+      padding: 20px;
+      background: #eef0f4;
+      // margin: 30px 0 0 0;
+      transition: $transition;
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1;
+        color: #0a1429;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &__no-whitespace {
+        min-width: 300px;
+        & span {
+          white-space: normal;
+        }
+      }
+
+      &:first-child {
+        border-radius: 14px 0px 0px 14px;
+      }
+
+      &:last-child {
+        border-radius: 0px 14px 14px 0px;
+      }
+
+      &.tabs-component_list_item__active {
+        background: $orange_gradient;
+
+        span {
+          color: $white;
+          // font-weight: 300;
+        }
+      }
+    }
+    @media (max-width: $large) {
+      font-size: 16px;
+      &_item {
+        // margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+      &_item {
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &_content {
+    margin-top: 25px;
+    @media (max-width: $large) {
+      margin-top: 20px;
+    }
+  }
+}

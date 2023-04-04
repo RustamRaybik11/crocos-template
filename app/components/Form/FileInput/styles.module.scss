@@ -1,0 +1,60 @@
+.input {
+  opacity: 0;
+  height: 0.1px;
+  width: 0.1px;
+  position: absolute;
+  display: block;
+  z-index: 3;
+  cursor: pointer;
+}
+
+
+
+.label {
+  position: relative;
+  font-weight: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  background: radial-gradient(
+    70.26% 224.84% at 27.18% 37%,
+    #00a2e4 23.34%,
+    #2000e4 100%
+  );
+  border-radius: 14px;
+  width: 100%;
+  // color: #0E1839;
+  border: 0;
+  padding: 17px 20px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.2s;
+  svg {
+    width: 20px;
+    height: 20px;
+    & path {
+      stroke: #fff;
+    }
+  }
+  &Accent {
+    width: 100%;
+    background-color: #ffce22;
+    color: #2d394f;
+    border: none;
+    svg {
+      margin-right: 20px;
+      width: 20px;
+      height: 20px;
+      & path {
+        stroke: #2d394f;
+      }
+    }
+  }
+}
+
+.grey{
+  background: #9faab7;
+}

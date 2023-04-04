@@ -1,0 +1,46 @@
+.input-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+  & > div {
+    width: 100%;
+  }
+}
+.form-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 30px;
+
+  &.control-action{
+    @media (max-width:768px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.input-icon {
+  & svg {
+    width: 18px;
+    height: 18px;
+    & path {
+      stroke: $accent;
+    }
+  }
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

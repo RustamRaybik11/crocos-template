@@ -1,0 +1,95 @@
+.swiper {
+  overflow-y: visible !important;
+  position: relative;
+  padding: 40px 0 !important;
+  //   box-sizing: border-box;
+  //   height: 100%;
+}
+.slider__wrapper {
+  position: relative;
+  margin-bottom: 53px;
+}
+.slider__arrow {
+  position: absolute;
+
+  transform: translateY(-50%);
+  z-index: 2;
+
+  @media (max-width: $large) {
+    position: relative;
+  }
+  @media (min-width: $large) {
+    top: 50%;
+  }
+}
+.slider__arrows--block {
+  @media (max-width: $large) {
+    display: flex;
+    gap: 20px;
+  }
+  & .swiper-button-disabled {
+    @media (min-width: $large) {
+      display: none;
+    }
+  }
+  & svg {
+    & path {
+      stroke: $primary;
+    }
+  }
+}
+.slider__scrollbar {
+  position: absolute !important;
+  bottom: -50px !important;
+  height: 3px;
+  width: 98%;
+  background: #ededed;
+  border-radius: 8px;
+  @media (max-width: $large) {
+    display: none;
+  }
+}
+.swiper-scrollbar-drag {
+  background: $primary !important;
+}
+
+.arrow--next,
+.arrow--prev {
+  background: #ffffff;
+  box-shadow: $shadow;
+  width: 51px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: $transition;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & svg {
+    & path {
+      transition: $transition;
+    }
+  }
+  &:hover {
+    background-color: $primary;
+    & svg {
+      & path {
+        stroke: $white;
+      }
+    }
+  }
+}
+.arrow--next {
+  @media (min-width: $large) {
+    right: -25px;
+  }
+}
+
+.arrow--prev {
+  @media (min-width: $large) {
+    left: -25px;
+  }
+}

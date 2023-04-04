@@ -1,0 +1,11 @@
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+  flex: 1 0;
+}
+
+.main__container {
+  width: 100%;
+}

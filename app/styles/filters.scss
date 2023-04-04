@@ -1,0 +1,67 @@
+.filter__container {
+  position: relative;
+}
+.filter-icon {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.filter-card {
+  background: $white;
+  box-shadow: 0px 18px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  padding: 40px;
+  position: absolute;
+  display: none;
+  right: 30px;
+  top: 0;
+  &--open {
+    display: block;
+    z-index: 2;
+  }
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &-bottom {
+    border-bottom: 1px dashed #d5d5d5;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    & h5 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    & ul {
+      & li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        gap: 10px;
+        & div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          & label {
+            margin: 0 0 0 10px;
+          }
+          & span {
+            color: $accent;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+  }
+}

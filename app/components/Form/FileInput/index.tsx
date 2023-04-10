@@ -53,7 +53,6 @@ const FileInput: React.FC<Props> = ({
     }
   };
 
-  console.log(attachedFiles);
 
   return (
     <>

@@ -33,23 +33,15 @@
   }
   &-primary {
     color: $white;
-    background: $orange_gradient;
-  }
-  &-blue {
-    color: $white;
-    background-color: $accent;
-  }
-  &-green {
-    color: $white;
-    background: $green-bg;
+    background: $primary;
   }
   &-accent {
     color: $white;
-    background: $blue_gradient;
+    background: $accent;
   }
   &-warn {
     color: $white;
-    background-color: $red;
+    background-color: $warn;
   }
   &-gray {
     color: $white;
@@ -230,7 +222,7 @@
     & div {
       min-width: 22px;
       height: 22px;
-      background: $orange_gradient;
+      background: $primary;
       display: flex;
       justify-content: center;
       align-items: center;

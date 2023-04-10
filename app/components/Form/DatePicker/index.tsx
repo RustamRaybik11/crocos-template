@@ -63,7 +63,7 @@ const DatePickerInput: React.FC<Props> = ({
                     ? (update: any) => {
                         setDateRange(update);
                       }
-                    : (date) => onChange(date)
+                    : (date: any) => onChange(date)
                 }
                 selected={value}
                 wrapperClassName="datePicker"

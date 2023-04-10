@@ -81,7 +81,6 @@ const LoginEcpPage = () => {
             // router.push(`/`);
           })
           .catch((err) => {
-            console.log()
             if(err.response.data.message === "Пользователь не найден"){
               setErrorMessage(err.response.data.message);
             }else {

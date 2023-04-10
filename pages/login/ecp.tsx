@@ -12,7 +12,6 @@ const LoginEcp = () => {
   const { t } = useTranslation();
   const { userInfo, updateUserInfo } = useAuthContext();
   const router = useRouter();
-  console.log(userInfo);
   
   useEffect(() => {
     if (userInfo) {

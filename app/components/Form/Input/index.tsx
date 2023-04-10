@@ -105,14 +105,6 @@ const Input: React.FC<Props> = ({
           <input
             type={type}
             name={name || register?.name}
-            // className={`${classNames(
-            //   styles.input,
-            //   className,
-            //   styles.inputIconRight,
-            //   styles.inputIcon
-            // )}
-            // ${underline ? classNames(styles.input_underline) : ""}
-            // ${checkbox ? classNames(styles.input_checkbox) : ""}`}
             className={`${
               underline
                 ? classNames(styles.input_underline, styles.input, className, {

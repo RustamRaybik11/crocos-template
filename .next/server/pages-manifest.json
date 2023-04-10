@@ -1,0 +1,15 @@
+{
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/api/hello": "pages/api/hello.js",
+  "/_app": "pages/_app.js",
+  "/login/ecp": "pages/login/ecp.js",
+  "/login": "pages/login.js",
+  "/login/forget": "pages/login/forget.js",
+  "/ru/404": "pages/ru/404.html",
+  "/kk/404": "pages/kk/404.html",
+  "/ru/500": "pages/ru/500.html",
+  "/kk/500": "pages/kk/500.html",
+  "/ru": "pages/ru.html",
+  "/kk": "pages/kk.html"
+}

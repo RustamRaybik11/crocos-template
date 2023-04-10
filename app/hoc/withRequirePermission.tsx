@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import Preloader from "../components/Preloader/Preloader";
 import { useAuthContext } from "../context/auth";
 import { useLoadingContext } from "../context/loading";
-import Wrapper from "../components/Wrapper";
 
 const withRequirePermission: any = (Component: any, permission: string) => {
   const AuthenticatedComponent = () => {
@@ -13,7 +12,6 @@ const withRequirePermission: any = (Component: any, permission: string) => {
     console.log(userInfo);
     
     useEffect(() => {
-      console.log(permission);
       if(userInfo){
         if (
           !isLoading &&

@@ -40,8 +40,6 @@ const LoginPage = () => {
   const { pathname, asPath, query, locale } = router;
 
   const onSubmit = (data: any) => {
-    console.log(data);
-
     setIsLoading(true);
     AuthService.signInUser(data)
       .then((res) => {

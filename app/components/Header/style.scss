@@ -36,7 +36,7 @@
 			font-size: 20px;
 			line-height: 1.25;
 			transition: $transition;
-			color: $dark;
+			color: $white;
 			text-decoration: none;
 			cursor: pointer;
 			&:hover {
@@ -416,7 +416,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: $black-grey;
+	background-color: $gray-dark;
 	transition: 0.5s;
 	border-radius: 30px;
 }
@@ -430,7 +430,7 @@
 	left: 10%;
 	bottom: 15%;
 	box-shadow: inset 8px -4px 0px 0px #fff000;
-	background: $black-grey;
+	background: $gray-dark;
 	transition: 0.5s;
 }
 
